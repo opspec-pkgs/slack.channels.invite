@@ -1,5 +1,5 @@
 # problem statement
-invites a user to a channel
+invites a user to a slack channel
 
 # example usage
 
