@@ -22,6 +22,5 @@ opctl run github.com/opspec-pkgs/slack.channels.invite#VERSION
 ```yaml
 op:
   pkg: { ref: github.com/opspec-pkgs/slack.channels.invite#VERSION }
-  inputs: { username, password,  }
-  outputs: { srcDir }
+  inputs: { token, channel, user  }
 ```
