@@ -1,0 +1,29 @@
+name: github.com/opspec-pkgs/slack.channels.invite
+description: invites a user to a channel
+inputs:
+  token:
+    string:
+      constraints: { minLength: 1 }
+      description: authentication token. Requires scope 'channels:write'
+      isSecret: true
+  channel:
+    string:
+      constraints: { minLength: 1 }
+      description: channel to invite user to
+  user:
+    string:
+      constraints: { minLength: 1 }
+      description: user to invite to channel
+outputs:
+  repo:
+    dir:
+      description: the cloned git repo
+run:
+  container:
+    image: { ref: 'opspecpkgs/slack.channels.invite:1.0.0' }
+    cmd: [ /cmd.sh ]
+    envVars:
+      token: $(token)
+      channel: $(channel)
+      user: $(user)
+    files: { /cmd.sh }
