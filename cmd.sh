@@ -2,7 +2,7 @@
 
 url="https://slack.com/api/channels.invite"
 
-resp=$(curl -d "token=$token" -d "channel=$channel" -d "user=$user" $url)
+resp=$(curl -d "token=$token" -d "channel=$channelId" -d "user=$userId" $url)
 
 if [[ "$(echo $resp | jq '.ok')" == "true" ]]; then
     echo "invite succeeded"

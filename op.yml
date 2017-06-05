@@ -6,14 +6,14 @@ inputs:
       constraints: { minLength: 1 }
       description: authentication token. Requires scope 'channels:write'
       isSecret: true
-  channel:
+  channelId:
     string:
       constraints: { minLength: 1 }
-      description: channel to invite user to
-  user:
+      description: id of channel to invite user to
+  userId:
     string:
       constraints: { minLength: 1 }
-      description: user to invite to channel
+      description: id of user to invite to channel
 outputs:
   repo:
     dir:
@@ -24,6 +24,6 @@ run:
     cmd: [ /cmd.sh ]
     envVars:
       token: $(token)
-      channel: $(channel)
-      user: $(user)
+      channelId: $(channelId)
+      userId: $(userId)
     files: { /cmd.sh }
