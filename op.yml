@@ -1,5 +1,5 @@
 name: github.com/opspec-pkgs/slack.channels.invite
-description: invites a user to a channel
+description: invites a user to a slack channel
 inputs:
   token:
     string:
