@@ -1,35 +1,40 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/slack.channels.invite.svg?branch=master)](https://travis-ci.org/opspec-pkgs/slack.channels.invite)
 
+<img src="icon.svg" alt="icon" height="100px">
+
 # Problem statement
 
 invites a user to a slack channel
 
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
+
 # Example usage
 
-> note: in examples, VERSION represents a version of the
-> slack.channels.invite pkg
-
-## install
+## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/slack.channels.invite#VERSION
+opctl pkg install github.com/opspec-pkgs/slack.channels.invite#1.0.0
 ```
 
-## run
+## Run
 
 ```
-opctl run github.com/opspec-pkgs/slack.channels.invite#VERSION
+opctl run github.com/opspec-pkgs/slack.channels.invite#1.0.0
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/slack.channels.invite#VERSION }
+  pkg: { ref: github.com/opspec-pkgs/slack.channels.invite#1.0.0 }
   inputs:
     token:
     channelId:
     userId:
+  outputs:
+    repo:
 ```
 
 # Support
