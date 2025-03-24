@@ -1,5 +1,4 @@
-[![build](https://github.com/opspec-pkgs/slack.channels.invite/actions/workflows/build.yml/badge.svg)](https://github.com/opspec-pkgs/slack.channels.invite/actions/workflows/build.yml)
-
+[![Build Status](https://github.com/opspec-pkgs/slack.channels.invite/workflows/build/badge.svg?branch=main)](https://github.com/opspec-pkgs/slack.channels.invite/actions?query=workflow%3Abuild+branch%3Amain)
 
 <img src="icon.svg" alt="icon" height="100px">
 
